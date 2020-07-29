@@ -1,6 +1,7 @@
 import React from 'react';
 import AdditionalFeature from './AdditionalFeature';
 import { connect } from "react-redux";
+import { addFeature } from "../actions/carActions";
 
 const AdditionalFeatures = props => {
   return (
@@ -21,8 +22,6 @@ const AdditionalFeatures = props => {
 
 const mapStateToProps = (state)=>{
   return{
-    carOnProps: state.car,
-    additionalPriceOnProps: state.additionalPrice,
     additionalFeaturesOnProps: state.additionalFeatures
   };
 };
